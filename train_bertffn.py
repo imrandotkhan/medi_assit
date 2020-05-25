@@ -8,7 +8,7 @@ from docproduct.dataset import create_dataset_for_bert
 from docproduct.models import MedicalQAModelwithBert
 from docproduct.loss import qa_pair_loss, qa_pair_cross_entropy_loss
 from docproduct.tokenization import FullTokenizer
-from docproduct.metrics import qa_pair_batch_accuracy
+from docproduct.metrics import qa_pair_batch_accurac
 
 
 def train_bertffn(model_path='models/bertffn_crossentropy/bertffn',
