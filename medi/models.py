@@ -9,7 +9,7 @@ import tensorflow as tf
 import tensorflow.keras.backend as K
 from tensorflow import keras
 
-from docproduct.bert import build_model_from_config
+from medi.bert import build_model_from_config
 
 from keras_bert.loader import load_model_weights_from_checkpoint
 

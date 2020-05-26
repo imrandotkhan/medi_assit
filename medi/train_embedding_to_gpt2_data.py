@@ -21,8 +21,6 @@ def train_embedding_to_gpt2_data(
     """Function to create gpt2 training data
 
     For each question, we take number_samples similar question/answer pair as prefix of GPT2 model.
-    For more details:
-    https://github.com/Santosh-Gupta/DocProduct/blob/master/README.md
 
     Keyword Arguments:
         data_path {str} -- Embedding data path, usually the output file of train_data_to_embedding (default: {'qa_embeddings/bertffn_crossentropy.zip'})

@@ -27,9 +27,6 @@ def train_bertffn(model_path='models/bertffn_crossentropy/bertffn',
         question,answer
         my eyes hurts, go see a doctor
 
-    For more information about training details:
-    https://github.com/Santosh-Gupta/DocProduct/blob/master/README.md
-
     Keyword Arguments:
         model_path {str} -- Path to save embedding model weights, ends with prefix of model files (default: {'models/bertffn_crossentropy/bertffn'})
         data_path {str} -- CSV data path (default: {'data/mqa_csv'})

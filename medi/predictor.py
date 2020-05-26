@@ -12,9 +12,9 @@ import tensorflow as tf
 from tqdm import tqdm
 
 import gpt2_estimator
-from docproduct.dataset import convert_text_to_feature
-from docproduct.models import MedicalQAModelwithBert
-from docproduct.tokenization import FullTokenizer
+from medi.dataset import convert_text_to_feature
+from medi.models import MedicalQAModelwithBert
+from medi.tokenization import FullTokenizer
 from keras_bert.loader import checkpoint_loader
 
 
