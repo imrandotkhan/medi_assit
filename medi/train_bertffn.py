@@ -4,11 +4,11 @@ import os
 import tensorflow as tf
 import tensorflow.keras.backend as K
 
-from docproduct.dataset import create_dataset_for_bert
-from docproduct.models import MedicalQAModelwithBert
-from docproduct.loss import qa_pair_loss, qa_pair_cross_entropy_loss
-from docproduct.tokenization import FullTokenizer
-from docproduct.metrics import qa_pair_batch_accuracy
+from medi.dataset import create_dataset_for_bert
+from medi.models import MedicalQAModelwithBert
+from medi.loss import qa_pair_loss, qa_pair_cross_entropy_loss
+from medi.tokenization import FullTokenizer
+from medi.metrics import qa_pair_batch_accuracy
 
 
 def train_bertffn(model_path='models/bertffn_crossentropy/bertffn',
