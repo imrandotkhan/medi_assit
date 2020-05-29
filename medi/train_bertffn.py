@@ -65,7 +65,7 @@ def train_bertffn(model_path='models/bertffn_crossentropy/bertffn',
     epochs = num_epochs
 
     callback = tf.keras.callbacks.ModelCheckpoint(
-        model_path, verbose=1, save_weights_only=True, save_best_only=False, period=1)
+    filepath=model_path, verbose=1, save_weights_only=True, save_best_only=False, period=1)
 
     medical_qa_model.fit(d, epochs=epochs, callbacks=[callback])
     medical_qa_model.summary()
