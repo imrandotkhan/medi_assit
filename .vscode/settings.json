@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/Users/apple/Downloads/medi_assit/envMedi/bin/python3.7"
+    "python.pythonPath": "/Users/apple/Downloads/medi_assit/envMedi/bin/python3.7",
+    "python.linting.pylintPath": "/Users/apple/Downloads/medi_assit/envMedi/bin/pylint"
 }

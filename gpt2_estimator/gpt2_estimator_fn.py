@@ -12,7 +12,7 @@ from gpt2_estimator.gpt2.src.accumulate import AccumulatingOptimizer
 @tf.function
 def accumulate_gradient(global_step, accumulate_gradients, opt_compute, opt_apply):
     accu = tf.floormod(global_step, accumulate_gradients)
-    if tf.equal(accu, 0):
+    if tf.equal(accu, 0) is not None:
         return opt_apply
     else:
         return opt_compute
@@ -21,7 +21,7 @@ def accumulate_gradient(global_step, accumulate_gradients, opt_compute, opt_appl
 @tf.function
 def reset_gradient(global_step, accumulate_gradients, opt_reset):
     accu = tf.floormod(global_step, accumulate_gradients)
-    if tf.equal(accu, 0):
+    if tf.equal(accu, 0) is not None:
         return opt_reset
     else:
         return 0.0
