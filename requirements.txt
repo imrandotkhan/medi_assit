@@ -45,7 +45,7 @@ oauthlib==3.1.0
 opt-einsum==3.1.0
 pandas==0.25.2
 protobuf==3.10.0
-pyarrow==0.15.0
+pyarrow==0.15.1
 pyasn1==0.4.7
 pyasn1-modules==0.2.7
 pycosat==0.6.3
